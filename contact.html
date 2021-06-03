@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SFS - Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <!--
+        <a href="index.html"><img class="heart" src="images/logo1.png" alt="Southbridge Food Share logo image"></a>
+        <!-- <h1>Southbridge Food Share</h1> -->
+      </div>
+
+      <h1 class="header-logo"><a href="index.html" class="light-yellow">Southbridge Food Share</a></h1>
+      
+      <nav class="primary-nav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item"><a class="primary-nav__link" href="index.html">Home</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="about.html">About</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <div class = "L top-content" id="google_translate_element" ><p class="L">Translate this page:</p></div>
+    <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    <!-- Refrence to the google translate API -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div class="main">
+      <h2 class="contact-title">Contact Us</h2>
+      <!-- <form class="contact-page" action="mailto:student.133889@worcesterschools.net" method="POST"> -->
+      <form class="contact-page">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <label class="contact-item__title required" for="name">Name</label>
+            <div class="contact-name">
+              <div class="contact-name__1"> 
+                <input class="contact-input contact-name__1" type="text" name="name1" id="name1" placeholder="First" required/>
+              </div>
+              <div class="contact-name__1">
+                <input class="contact-input contact-name__1" type="text" name="name2" id="name2" placeholder="Last" required/>
+              </div>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <label class="contact-item__title" for="phone">Telephone</label>
+            <!-- <input class="contact-input" type="number" name="Telephone" id="tel"/> -->
+            <input class="contact-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/>
+          </li>
+
+          <li class="contact-item">
+            <label class="contact-item__title required" for="email">Email</label>
+            <input class="contact-input" type="text" name="email" id="email" required/>
+          </li>
+
+          <li class="contact-item">
+            <label class="contact-item__title required" for="subject">Subject</label>
+            <input class="contact-input" type="text" subject="subject" id="subject" placeholder="" required/>
+          </li>
+          
+          <li class="contact-item">
+            <label class="contact-item__title required" for="message">Message</label>
+            <div class="contact-message">
+              <textarea class="message" name="message" id="message" required></textarea>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <input class="contact-item__submit" type="submit" value="Submit"/>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-item"><a class ="footer-link" href="index.html"><span>&copy; </span><span id="year"></span><span> Southbridge Food Pantry</span></a></li>
+        <li class="footer-item"><a class ="footer-link" href="privacy.html">Privacy</a></li>
+        <li class="footer-item"><a class ="footer-link" href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      <section class="footer-fb">
+        <a href="https://www.facebook.com/SouthbridgeFoodShare/"><img class="fb-logo" src="images/fb.png" alt="Facebook logo"></a>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
